@@ -25,6 +25,8 @@
     
     $(document).on('click', '#refresh-results', function(){
        $("#result-screen").children().remove(); 
+       $("#operand1").val("");
+       $("#operand2").val("");
     });
    
     
@@ -37,13 +39,13 @@
     function Calculation(op1, op2, ops){
         switch(ops){
             case "+":
-                return op1 + op2;
+                return parseFloat(op1) + parseFloat(op2);
             case "-":
-                return op1 - op2;
+                return parseFloat(op1) - parseFloat(op2);
             case "x":
-                return op1 * op2;
+                return parseFloat(op1) * parseFloat(op2);
             case "/":
-                return op1 / op2;
+                return parseFloat(op1) / parseFloat(op2);
             default:
                 return false;
         }
