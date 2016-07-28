@@ -1,0 +1,29 @@
+html, body{
+    height: 100%;
+}
+#outer-wrapper{
+    
+    width: 50%;
+    margin-top:5em;
+}
+.input-container{
+    padding-bottom: 0;
+}
+.operands{
+    margin:1em;
+    
+}
+.operands-space{
+    border-right: 1px solid #CCC;
+}
+.result-space{
+    height: 100%
+}
+.notification{
+    padding: 1em;
+    margin-bottom:0;
+}
+
+.results{
+    margin:.2em;
+}
