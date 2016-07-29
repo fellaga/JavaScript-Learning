@@ -50,7 +50,7 @@
     }
     
     /**
-     * Validatte the operands entered by the user.
+     * Validate the operands entered by the user.
      *
      */
     function OperandValidator(operand, id){
