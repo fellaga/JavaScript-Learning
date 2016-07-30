@@ -56,7 +56,7 @@
      *
      */
     function OperandValidator(operand, id){
-        var validPattern = new RegExp(/^[0-9]+$/);
+        var validPattern = new RegExp(/^[0-9]+(\.[0-9]+){0,1}$/);
         
         if (!validPattern.test(operand) && _AllValide[id]){
             _AllValide[id] = false;
