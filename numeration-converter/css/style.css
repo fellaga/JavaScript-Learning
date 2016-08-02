@@ -1,0 +1,21 @@
+#outer-wrapper{
+    margin-top: 10em;
+    width:60%;
+}
+
+.panel-heading > h2 {
+    font-weight: bold;
+}
+
+.converter-options{
+}
+
+#convertBtn{
+    width: 50px;
+    margin: 50% 30%;
+}
+
+.notification{
+    padding: 1em;
+    margin-bottom:0;
+}

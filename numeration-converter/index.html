@@ -1,0 +1,138 @@
+<!DBaseYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    
+    
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <div id="outer-wrapper" class="container">
+        
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                <h2>Numeration System Converter</h2>
+            </div>
+            <div class="panel-body">
+                <!--The left Side-->
+                <div class="col-xs-offset-1 col-xs-4">
+                    <div class="row">
+                        <div class="panel panel-default converter-options">
+                            <div class="panel-body">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="leftBase" id="leftBase"  value="2" />
+                                        BINARY
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="leftBase" id="leftBase"  value="8" />
+                                        OCTAL
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="leftBase" id="leftBase"  value="10" checked/>
+                                        DECIMAL
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="leftBase" id="leftBase"  value="16" />
+                                        HEXA DECIMAL
+                                    </label>
+                                </div>
+                            </div> <!-- End of Operands space -->
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="form-group operands-space">
+                            <div class="input-group operands">
+                                <span class="input-group-addon"><strong id="leftInputLabel">Base</strong></span>
+                                <input type="text" name="leftInput" id="leftInput" class="form-control" placehodler="Enter you numbe here" />
+                            </div> 
+                        </div> <!-- End of Operands space -->
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <button class="btn btn-primary" id="convertBtn">
+                        <snap class="glyphicon glyphicon-transfer"></snap>
+                    </button>
+                </div>
+                <!--The right Side-->
+                <div class="col-xs-4">
+                    <div class="row">
+                        <div class="panel panel-default converter-options">
+                            <div class="panel-body">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rightBase" id="rightBase"  value="2" checked />
+                                        BINARY
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rightBase" id="rightBase"  value="8" />
+                                        OCTAL
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rightBase" id="rightBase"  value="10" />
+                                        DECIMAL
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="rightBase" id="rightBase"  value="16" />
+                                        HEXA DECIMAL
+                                    </label>
+                                </div>
+                            </div> <!-- End of Operands space -->
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="form-group operands-space">
+                            <div class="input-group operands">
+                                <span class="input-group-addon"><strong id="rightInputLabel">Base</strong></span>
+                                <input type="text" name="rightInput" id="rightInput" class="form-control" placehodler="Enter you number here" />
+                            </div> 
+                        </div> <!-- End of Operands space -->
+                    </div>
+                </div>
+            </div>
+            <div id="notifications"></div>
+            <div class="panel-footer">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../vendors/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
